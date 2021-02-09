@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Java Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" th:href="@{/images/favicon.ico}" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
 </head>
 
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <p class="navbar-brand">
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="" /></span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" th:src="@{/images/profile.png}" alt="" /></span>
     </p>
     <h4 class="mb-0">
         Константин Булыгин
@@ -71,13 +70,10 @@
             <h4 class="mb-5">Опыт</h4>
             <div class="d-flex flex-column">
                 <div class="flex-grow-1 dev-icons">
-                    <p>Имеется 2 Pet-проекта и одна стажировка для демонстрации полученых знаний и навыков.</p>
-                    <p>Первый проект: <a href="#">Интернет магазин</a></p>
-                    <p>Stack: </p>
+                    <p>Имеется 2 Pet-проекта и одна стажировка для демонстрации полученных знаний и навыков.</p>
+                    <p>Первый проект: <a href="#">Интернет магазин</a> Stack: </p>
                     <p>Второй проект: <a href="#">Менеджер задач</a> Stack: </p>
-                    <p>Stack: </p>
-                    <p>Стажировка: <a href="#">Учет калорий</a> Stack: </p>
-                    <p>Stack: </p>
+                    <p>Третий проект-стажировка: <a href="#">Учет калорий</a> Stack: </p>
                 </div>
             </div>
         </div>
@@ -117,12 +113,5 @@
         </div>
     </section>
 </div>
-<!-- Bootstrap core JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Third party plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
 </body>
 </html>
