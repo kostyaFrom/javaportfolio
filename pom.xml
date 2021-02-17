@@ -11,7 +11,7 @@
     <groupId>com.konstantinbulygin</groupId>
     <artifactId>java_portfolio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>Java Portfolio</name>
     <description>Portfolio project</description>
     <properties>
