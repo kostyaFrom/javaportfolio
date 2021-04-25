@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" th:href="@{/images/favicon.ico}"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
           type="text/css"/>
@@ -52,6 +54,26 @@
 
 <!-- Page Content-->
 <div class="container-fluid p-0">
+
+    <!--functionality to use jQuery for I18-->
+    <!--    <h4 th:text="#{welcome.message}"></h4>-->
+    <!--    <span th:text="#{language.change}"></span>-->
+    <!--    <select id="locales">-->
+    <!--        <option value=""></option>-->
+    <!--        <option value="en" th:text="#{lang.eng}"></option>-->
+    <!--        <option value="ru"th:text="#{lang.ru}"></option>-->
+    <!--    </select>-->
+
+    <div class="container ml-2">
+        <a th:href="@{?lang=en}">
+            <img th:src="@{/images/uk.png}" about="uk"><span class="ml-2">[[#{lang.eng}]]</span>
+        </a>
+        <a th:href="@{?lang=ru}" class="ml-2">
+            <img th:src="@{/images/ru.png}" about="ru"><span class="ml-2">[[#{lang.ru}]]</span>
+        </a>
+    </div>
+
+
     <!-- Skills-->
     <section class="resume-section" id="skills">
         <div class="resume-section-content">
@@ -76,6 +98,7 @@
             <div class="d-flex flex-column">
                 <div class="flex-grow-1 dev-icons">
                     <p>3 projects deployed on Heroku</p>
+
 
                     <p>1: <a href="https://online-store-spring-boot.herokuapp.com" target="_blank">Online
                         store</a></p>
@@ -118,7 +141,8 @@
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <p>Currently I`m working as sales manager in wholesale trade with auto spare parts since 2011. My
-                        duties are: work in 1C program, control remains of spare parts, control a customer debt, work with bank account,
+                        duties are: work in 1C program, control remains of spare parts, control a customer debt, work
+                        with bank account,
                         order processing, calculations of the cost of parts from metal for their production on press
                         equipment, participation in bidding on the B2B platform and a lot of email and phone rings.</p>
                     <p>Ready to relocate.</p>
@@ -149,4 +173,19 @@
     </section>
 </div>
 </body>
+
+<!--functionality to use jQuery for I18-->
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function () {-->
+<!--        $("#locales").change(function () {-->
+
+<!--            let selectOpt = $('#locales').val();-->
+<!--            if (selectOpt !== '') {-->
+<!--                window.location.replace('?lang=' + selectOpt)-->
+<!--            }-->
+
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+
 </html>
