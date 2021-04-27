@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Java Portfolio</title>
+    <title>[[#{app.title}]]</title>
     <link rel="icon" type="image/x-icon" th:href="@{/images/favicon.ico}"/>
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
           type="text/css"/>
@@ -23,29 +22,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <p class="navbar-brand">
         <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                                             th:src="@{/images/profile.png}" alt=""/></span>
+                                             th:src="@{/images/profile.png}" alt="profile image"/></span>
     </p>
-    <h4 class="mb-0">
-        Konstantin Bulygin
-    </h4>
-    <!-- About-->
+    <h4 class="mb-0">[[#{app.dev.name}]]</h4>
 
+    <!-- About-->
     <div class="contacts">
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <div class="subheading mb-5">
-                    <p>Contacts</p>
+                    <p>[[#{app.dev.contacts}]]</p>
                     <p>+7(937)235 69 31</p>
                     <p>korustlt@gmail.com</p>
                     <a th:href="@{/files/konstantin_bulygin_java_developer_cv.pdf}"
-                       download="konstantin_bulygin_java_developer_cv">Download as PDF</a>
+                       download="konstantin_bulygin_java_developer_cv">[[#{app.dev.download}]]</a>
                 </div>
                 <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/kostyafrom"><i
+                    <a class="social-icon" href="https://www.linkedin.com/in/kostyafrom" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/kostyaFrom?tab=repositories"><i
+                    <a class="social-icon" href="https://github.com/kostyaFrom?tab=repositories" target="_blank"><i
                             class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </section>
@@ -77,10 +74,11 @@
     <!-- Skills-->
     <section class="resume-section" id="skills">
         <div class="resume-section-content">
-            <h4 class="mb-5">Skills</h4>
+            <h4 class="mb-5">[[#{app.dev.skills}]]</h4>
             <ul class="list-inline dev-icons">
                 <li class="list-inline-item"><b>Java Core</b></li>
                 <li class="list-inline-item"><b>Spring Boot</b></li>
+                <li class="list-inline-item"><b>Spring Security</b></li>
                 <li class="list-inline-item"><b>PostgreSQL</b></li>
                 <li class="list-inline-item"><b>Hibernate</b></li>
                 <li class="list-inline-item"><b>Thymeleaf</b></li>
@@ -94,21 +92,20 @@
     <!-- Experience-->
     <section class="resume-section" id="experience">
         <div class="resume-section-content">
-            <h4 class="mb-5">Experience</h4>
+            <h4 class="mb-5">[[#{app.dev.exp}]]</h4>
             <div class="d-flex flex-column">
                 <div class="flex-grow-1 dev-icons">
-                    <p>3 projects deployed on Heroku</p>
-
+                    <p>[[#{app.dev.deploy}]] <a href="https://devcenter.heroku.com/" target="_blank">Heroku.</a></p>
 
                     <p>1: <a href="https://online-store-spring-boot.herokuapp.com" target="_blank">Online
-                        store</a></p>
+                        store.</a></p>
                     <p>Stack: Java, Spring Boot, Hibernate, Spring Security, PostgresSQL, Thymeleaf.</p>
 
-                    <p>2: <a href="https://online-pma-app.herokuapp.com" target="_blank">Project Management App</a></p>
+                    <p>2: <a href="https://online-pma-app.herokuapp.com" target="_blank">Project Management App.</a></p>
                     <p>Stack: Java, Spring Boot, Hibernate, Spring Security, PostgresSQL, Thymeleaf.</p>
 
-                    <p>3: <a href="#" target="_blank">Angular Insta App</a></p>
-                    <p>Stack: Java, Spring MVC, Hibernate, Spring Security, PostgresSQL, Angular.</p>
+                    <p>3: <a href="#">InstaTons: in development.</a></p>
+                    <p>Stack: Angular, Java, Spring MVC, Hibernate, Spring Security, PostgresSQL.</p>
 
                 </div>
             </div>
@@ -120,13 +117,12 @@
     <!-- Education-->
     <section class="resume-section" id="education">
         <div class="resume-section-content">
-            <h4 class="mb-5">Education</h4>
+            <h4 class="mb-5">[[#{app.dev.edu}]]</h4>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <p>Current knowledge gathered via self-education on online courses, books and YouTube
-                        tutorials.</p>
-                    <p>Currently I`m studying on 3d course of <b>Tolyatti Government University</b></p>
-                    <p>Course is “Applied computer science”.</p>
+                    <p>[[#{app.dev.education.description}]] <a href="https://edu.rosdistant.ru/" target="_blank">[[#{app.dev.tgu}]]</a></p>
+                    <p>[[#{app.dev.subject}]]</p>
+
                 </div>
             </div>
         </div>
@@ -137,16 +133,12 @@
     <!--additional info-->
     <section class="resume-section" id="additional">
         <div class="resume-section-content">
-            <h4 class="mb-5">Additional info</h4>
+            <h4 class="mb-5">[[#{app.dev.addition}]]</h4>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <p>Currently I`m working as sales manager in wholesale trade with auto spare parts since 2011. My
-                        duties are: work in 1C program, control remains of spare parts, control a customer debt, work
-                        with bank account,
-                        order processing, calculations of the cost of parts from metal for their production on press
-                        equipment, participation in bidding on the B2B platform and a lot of email and phone rings.</p>
-                    <p>Ready to relocate.</p>
-                    <p>Date of birth: 14/04/1981.</p>
+                    <p>[[#{app.dev.addition.info}]]</p>
+                    <p>[[#{app.dev.relocate}]]</p>
+                    <p>[[#{app.dev.dob}]]</p>
                 </div>
             </div>
         </div>
@@ -157,7 +149,7 @@
     <!-- Contacts-->
     <section class="resume-section" id="contacts">
         <div class="resume-section-contacts">
-            <h4 class="mb-5">Contacts</h4>
+            <h4 class="mb-5">[[#{app.dev.contacts}]]</h4>
             <div class="flex-grow-1 contacts-info">
                 <p></p>+7(937)235 69 31</p>
                 <p>korustlt@gmail.com</p>
