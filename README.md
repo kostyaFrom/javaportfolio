@@ -26,3 +26,6 @@ Subject is “Applied computer science”.
 
 ADDITIONAL INFO
 I have been working as a sales manager in wholesale trade with auto spare parts since 2014 till now. My duties are work in the 1C program, control remains of spare parts, сommunication with customers, resolving conflict situations, control customers debt, work with a bank account, order processing, calculations of the cost of the parts from the metal for their production on press equipment, participation in bidding on the B2B platform, and a lot of emails and phone rings.
+
+
+![resume](https://user-images.githubusercontent.com/42876203/116783020-77b6fb00-aa9d-11eb-83dd-3251d07423f1.png)
